@@ -27,8 +27,8 @@ class ChannelViewModel : ViewModel() {
 
             ),
             Channel(
-                "CBS", R.drawable.cbs,
-                ""
+                "Ten TV", R.drawable.tentvlogo,
+                "http://192.168.0.105:8080/hls/test.m3u8"
             ),
             Channel(
                 "PBS", R.drawable.pbs,
@@ -134,7 +134,7 @@ class ChannelViewModel : ViewModel() {
 
 
             Channel("DISCOVERY", R.drawable.discovery, ""
-                ),
+            ),
 
 
 

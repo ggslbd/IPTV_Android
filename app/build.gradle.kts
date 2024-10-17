@@ -7,6 +7,7 @@ android {
     namespace = "com.example.mytvapp"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.mytvapp"
         minSdk = 24
@@ -53,12 +54,9 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.1")
 
     implementation ("com.google.android.exoplayer:exoplayer:2.19.1")
-
     implementation ("androidx.media3:media3-ui:1.1.1")
 
-
-
-
+     implementation ("com.google.code.gson:gson:2.11.0")
 
 
 }

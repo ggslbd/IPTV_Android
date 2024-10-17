@@ -11,11 +11,15 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.mytvapp.R
 import com.example.mytvapp.modal.Channel
 
-class ChannelAdapter : RecyclerView.Adapter<ChannelHolder>() {
+
+
+
+class ChannelAdapter() : RecyclerView.Adapter<ChannelHolder>() {
 
     private var channelList = listOf<Channel>()
     private var onClickedInterface: onChannelClicked? = null
     private var selectedPosition = RecyclerView.NO_POSITION // Added for focus handling
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChannelHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.channelliststyle, parent, false)
@@ -61,11 +65,14 @@ class ChannelAdapter : RecyclerView.Adapter<ChannelHolder>() {
         selectedPosition = position
         notifyItemChanged(previousPosition)
         notifyItemChanged(selectedPosition)
-        }
+    }
+
 
 
 
 }
+
+
 
 class ChannelHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnFocusChangeListener {
     val channelName: TextView = itemView.findViewById(R.id.channelName)

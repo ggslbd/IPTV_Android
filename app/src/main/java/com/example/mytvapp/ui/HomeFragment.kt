@@ -45,29 +45,16 @@ class HomeFragment : Fragment(), onChannelClicked {
         viewModel = ViewModelProvider(this).get(ChannelViewModel::class.java)
 
 
-
         adapter = ChannelAdapter()
 
+
         viewModel.channelList().observe(viewLifecycleOwner, Observer {
-
-
             adapter.setList(it)
-
             Log.e("TVAPP", it.toString())
             binding.rvChannel.adapter = adapter
-
-
-
         })
 
         adapter.setListener(this)
-
-
-
-
-
-
-
 
     }
 
@@ -79,9 +66,6 @@ class HomeFragment : Fragment(), onChannelClicked {
 
         selectedChannelPosition = position
         view?.findNavController()?.navigate(R.id.action_homie_to_playerFragment2, bundle)
-
-
-
 
     }
 
