@@ -21,76 +21,82 @@ class ChannelViewModel : ViewModel() {
 
 
         val channels = listOf(
+
+            Channel(
+                "Al Jazeera",
+                R.drawable.aljazeera,
+                "https://live-hls-web-aja.getaj.net/AJA/index.m3u8"
+            ),
+
             Channel(
                 "CNN", R.drawable.cnn,
                 "https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8"
 
             ),
             Channel(
-                "Ten TV", R.drawable.tentvlogo,
-                "http://192.168.0.108:8080/hls/test.m3u8"
+                "TRTW", R.drawable.trtworld,
+                "https://tv-trtworld.medya.trt.com.tr/master.m3u8"
             ),
             Channel(
-                "PBS", R.drawable.pbs,
-                ""
+                "DW", R.drawable.dw,
+                "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8"
             ),
             Channel(
-                "KBS",
-                R.drawable.kbs,
-                ""
+                "RT", R.drawable.rt_do,
+                "https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8"
+            ),
+
+            Channel(
+                "Wild Earth",  R.drawable.wildarth,
+                "https://wildearth-roku.amagi.tv/masterR720P.m3u8"
             ),
             Channel(
-                "NHK Japan",
-                R.drawable.nhk,
-                ""
+                "Horse", R.drawable.horse,
+                "https://hncfree-samsungau.amagi.tv/playlist.m3u8"
+            ),
+
+            Channel(
+                "Sky ", R.drawable.skycricket,
+                "https://ythls.armelin.one/channel/UCoMdktPbSTixAyNGwb-UYkQ.m3u8"
+            ),
+
+            Channel(
+                "Drama 1", R.drawable.adrama,
+                "https://weyyak-live.akamaized.net/weyyak_drama/index.m3u8"
             ),
             Channel(
-                "DW",
-                R.drawable.dw,
-                ""
+                "A Music", R.drawable.tentvlogo,
+                "https://albportal.net/albkanalemusic.m3u8"
             ),
 
 
             Channel(
-                "TNT SPORTS", R.drawable.tntsports,
-                ""
+                "TRT Toon", R.drawable.trtcocuk,
+                "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8"
             ),
 
 
             Channel(
-                "SKY CRICKET", R.drawable.skycricket,
-                ""
-            ),
-
-
-            Channel(
-                "CNA", R.drawable.cna,
-                ""
+                "Belgesel", R.drawable.trtbelgesel,
+                "https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8"
             ),
 
             Channel(
-                "NASA", R.drawable.nasa, "" +
-                        ""
+                "TRTAvaz", R.drawable.trtavaz,
+                "https://tv-trtavaz.medya.trt.com.tr/master.m3u8"
             ),
 
             Channel(
-                "Al Jazeera",
-                R.drawable.aljazeera,
-                ""
-            ),
-
-            Channel(
-                "CGTN",
-                R.drawable.cgnt,
-                ""
+                "TRTKurdi",  R.drawable.trtkurdi,
+                "https://tv-trtkurdi.medya.trt.com.tr/master.m3u8"
             ),
 
             // BACKUP CGTTN  https://livedoc.cgtn.com/500d/prog_index.m3u8
 
 
             Channel(
-                "BEIN SPORTS", R.drawable.beinsports,
-                ""
+                "FRENCE24", R.drawable.france24,
+                "https://ythls.armelin.one/channel/UCQfwfsi5VrQ8yKZ-UWmAEFg.m3u8"
             ),
 
             Channel(
@@ -99,17 +105,9 @@ class ChannelViewModel : ViewModel() {
                 ""
             ),
 
-
-
-
             Channel(
                 "TEN SPORTS",
                 R.drawable.ten,
-                ""
-            ),
-
-            Channel(
-                "Sky Mix", R.drawable.skycricket,
                 ""
             ),
 
@@ -164,11 +162,7 @@ class ChannelViewModel : ViewModel() {
             ),
 
 
-            Channel(
-                "RT",
-                R.drawable.rt_do,
-                ""
-            ),
+
 
             Channel(
                 "BBC FOUR", R.drawable.bbcfour,
